@@ -5,22 +5,129 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Todo App</title>
-  <link rel="stylesheet" href="styles/main.css" />
+  <title>Uber Eats</title>
+  <link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
-    <header>
-        <div class="logo">logo</div>
-        <input class="delivery_time" name="delivery time" placeholder="ASAP"/>
-        <input class="address" name="address" placeholder="ul. Bolshaya Dmitrovka, 22"/>
-        <button class="sign_in">sign in</button>
-        <button class="register">register</button>
-        <button class="shopping_tray">
-            <img src="./shopping_tray.svg"
+    <div class="header">
+        <div class="logo" class="inline">
+            <img src="./images/uber-eats.svg" alt="logo">
+        </div>
+        <input class="delivery_time" class="inline" name="delivery time" placeholder="ASAP"/>
+        <div class="note" class="inline">to</div>
+        <div class="address" class="inline">
+            <img src="./images/map-marker.svg"/>
+            <input type="text" placeholder="ul. Bolshaya Dmitrovka, 22"/>
+        </div>
+        <button class="sign_in" class="inline">Sign in</button>
+        <button class="register" class="inline">Register</button>
+        <button class="shopping_bag" class="inline">
+            <img src="./images/shopping-bag.svg" alt="shopping-bag">
         </button>
-    </header>
-    <header>Search bar</header>
-    <main>Main content</main>
-    <footer>Footer</footer>
+    </div>
+
+    <div class="search_bar" class="inline">
+        <img src="./images/search.svg"/>
+        <input type="text" placeholder="Search for restaurant or cuisine">
+    </div>
+
+    <div class="main">
+        <div class="tile">
+            <p style="margin-top: 56px;">Moscow Restaurants</p>
+            <img src="./images/photo1.jpg">
+            <p style="font-size: 16px;">Макдональдс - Газетный</p>
+            <p style="color:#626262; font-size: 14px;">₽₽ • Бургеры</p>
+            <p style="font-size: 13px;">25-35 Min</p>
+
+        </div>
+        <div class="tile">
+            <p style="margin-top: 56px; color: transparent;" id="text1">/</p>
+            <img src="./images/photo2.jpg">
+            <p style="font-size: 16px;">DimSum & Co — ЦДМ</p>
+            <p style="color:#626262; font-size: 14px;">₽ • Японская • Китайская • Азиатская</p>
+            <p style="font-size: 13px;">40 - 50 Min</p>
+        </div>
+        <div class="tile">
+            <p style="margin-top: 56px; color: transparent;" id="text2">/</p>
+            <img src="./images/photo3.jpg">
+            <p style="font-size: 16px;">ДвижОК — Манежная</p>
+            <p style="color:#626262; font-size: 14px;">₽ • Американская • Европейская</p>
+            <p style="font-size: 13px;">35 - 45 Min</p>
+        </div>
+        <div class="tile">
+            <img src="./images/photo4.jpg">
+            <p style="font-size: 16px;">НЯ — NHA</p>
+            <p style="color:#626262; font-size: 14px;">₽₽ • Вьетнамская</p>
+            <p style="font-size: 13px;">30 - 40 Min</p>
+        </div>
+        <div class="tile">
+            <img src="./images/photo5.jpg">
+            <p style="font-size: 16px;">Точка Дзы — Цветной</p>
+            <p style="color:#626262; font-size: 14px;">₽₽ • Вьетнамская</p>
+            <p style="font-size: 13px;">40 - 50 Min</p>
+        </div>
+        <div class="tile">
+            <img src="./images/photo6.jpg">
+            <p style="font-size: 16px;">Cinnabon</p>
+            <p style="color:#626262; font-size: 14px;">₽ • Выпечка • Десерты • Капкейки</p>
+            <p style="font-size: 13px;">25 - 35 Min</p>
+        </div>
+        <div class="tile">
+            <img src="./images/photo8.jpg">
+            <p style="font-size: 16px;">PIZZELOVE</p>
+            <p style="color:#626262; font-size: 14px;">₽₽ • Пицца</p>
+            <p style="font-size: 13px;">15 - 25 Min</p>
+        </div>
+        <div class="tile">
+            <img src="./images/photo7.jpg">
+            <p style="font-size: 16px;">Zю кафе — Тверская</p>
+            <p style="color:#626262; font-size: 14px;">₽₽ • Японская</p>
+            <p style="font-size: 13px;">25 - 35 Min</p>
+        </div>
+        <div class="tile">
+            <img src="./images/photo9.jpg">
+            <p style="font-size: 16px;">Bar BQ Cafe — Манежная</p>
+            <p style="color:#626262; font-size: 14px;">₽₽₽ • Европейская</p>
+            <p style="font-size: 13px;">30 - 40 Min</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo2">
+            <img src="./images/dark-logo.svg" alt="logo">
+        </div>
+        <div class="footer_main">
+            <div class="block">
+            <button class="dropbtn"><img src="./images/globe.svg"/> ENGLISH <div class="inline" style="width: 50px;"></div> <img src="./images/down-arrow.svg"/></button>
+            <div style="color: white; font-size: 20px;"><span style="color: #49A144;">#</span>UberEats</div>
+            <img class="logos" src="./images/facebook.svg"/>
+            <img class="logos" src="./images/twitter.svg"/>
+            <img class="logos" src="./images/instagram.svg">
+            </div>
+
+            <div class="block">
+            <p style="color: white; padding: 10px;">About UberEats</p>
+            <p style="color: white; padding: 10px;">Become a Delivery Partner</p>
+            <p style="color: white; padding: 10px;">Become a Restaurant Partner</p>
+            </div>
+
+            <div class="block">
+            <p style="color: white;">See all cities</p>
+            <p style="color: white;">Pricing</p>
+            <p style="color: white;">Help</p>  
+            <p style="color: white;">FAQs</p>
+            </div>
+        </div>
+        <div class="stores">
+            <img src="./images/app-store.png"/>
+            <img src="./images/google-play.png"/>
+        </div>
+
+        <div class="footer_main" style="justify-content: center; align-items: center;">
+            <p style="color: white; padding: 10%;">© 2017 Uber Technologies Inc.</p>
+            <p style="color: white; padding: 10%;">Privacy</p>
+            <p style="color: white; padding: 10%;">Terms</p>
+            <button class="up_button">↑</button>
+        </div>
+    </div>
 </body>
